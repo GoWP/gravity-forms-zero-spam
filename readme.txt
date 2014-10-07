@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: karpstrucking
-Tags: spam, gravityforms
+Tags: gravityforms, gravity forms, anti-spam, antispam, spam, spam-blocker, spambot, spammer, addons, add-ons
 Requires at least: 3.0.1
 Tested up to: 4.0
 Stable tag: trunk
@@ -18,9 +18,8 @@ Walsh's "Zero Spam" technique.
 
 == Installation ==
 
-1. Upload `plugin-name.php` to the `/wp-content/plugins/` directory
+1. Upload the `gravity-forms-zero-spam` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Place `<?php do_action('plugin_name_hook'); ?>` in your templates
 
 == Changelog ==
 
