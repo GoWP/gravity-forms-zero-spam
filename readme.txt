@@ -3,7 +3,7 @@ Contributors: karpstrucking
 Tags: gravityforms, gravity forms, anti-spam, antispam, spam, spam-blocker, spambot, spammer, addons, add-ons
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: trunk
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
