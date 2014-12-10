@@ -26,7 +26,7 @@
 	class GF_Zero_Spam {
 		public function __construct() { // instantiation (is that a word?)
 			add_action( 'wp_footer', array( $this, 'add_key_field' ) ); // add key injection JS to the bottom of the page
-			add_filter( 'gform_validation', array( $this, 'check_key_field' ) ); // add our validation check to all forms
+			add_filter( 'gform_entry_is_spam', array( $this, 'check_key_field' ) ); // add our validation check to all forms
 		}
 		public function deactivate() { // plugin deactivation
 			delete_option( 'gf_zero_spam_key' ); // remove the key
@@ -54,11 +54,11 @@
 			</script>
 			<?php
 		}
-		public function check_key_field( $result ) { // check for the key during validation
+		public function check_key_field( $is_spam ) { // check for the key during validation
 			if ( ! isset( $_POST['gf_zero_spam_key'] ) || ( $_POST['gf_zero_spam_key'] != $this->get_key() ) ) {
-				$result['is_valid'] = false;
+				return true;
 			}
-			return $result;
+			return false;
 		}
 	}
 
