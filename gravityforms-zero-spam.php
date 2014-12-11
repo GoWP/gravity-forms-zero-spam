@@ -4,7 +4,7 @@
  * Plugin Name:       Gravity Forms Zero Spam
  * Plugin URI:        http://www.gowp.com/plugins/gravityforms-zero-spam
  * Description:       Enhance your Gravity Forms to include anti-spam measures originally based on the work of David Walsh's <a href="http://davidwalsh.name/wordpress-comment-spam">"Zero Spam"</a> technique.
- * Version:           1.0
+ * Version:           1.0.1
  * Author:            GoWP
  * Author URI:        http://www.gowp.com
  * License:           GPL-2.0+

@@ -13,8 +13,7 @@ Enhance your Gravity Forms to include anti-spam measures originally based on the
 
 Requires: Gravity Forms v1.5+
 
-This plugin adds a non-obtrusive anti-spam measure to all of your Gravity Forms. This measure is originally based on David
-Walsh's "Zero Spam" technique.
+This plugin adds a non-obtrusive anti-spam measure to all of your Gravity Forms. This measure is originally based on David Walsh's "Zero Spam" technique.
 
 == Installation ==
 
