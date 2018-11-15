@@ -38,7 +38,7 @@
 			}
 			return $key;
 		}
-		public function add_key_field( $form ) { // inject the hidden field and key into the form at submission
+		public function add_key_field() { // inject the hidden field and key into the form at submission
 			?>
 			<script type='text/javascript'>
 				jQuery(document).ready(function($){
