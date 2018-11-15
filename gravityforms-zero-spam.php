@@ -4,9 +4,9 @@
  * Plugin Name:       Gravity Forms Zero Spam
  * Plugin URI:        http://www.gowp.com/plugins/gravityforms-zero-spam
  * Description:       Enhance your Gravity Forms to include anti-spam measures originally based on the work of David Walsh's <a href="http://davidwalsh.name/wordpress-comment-spam">"Zero Spam"</a> technique.
- * Version:           1.0.1
+ * Version:           1.0.3
  * Author:            GoWP
- * Author URI:        http://www.gowp.com
+ * Author URI:        https://www.gowp.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -33,20 +33,20 @@
 		}
 		public function get_key() { // retrieve they key, generating if needed
 			if ( ! $key = get_option( 'gf_zero_spam_key' ) ) {
-				$key = wp_generate_password( 64 );
-				update_option( 'gf_zero_spam_key', $key );
+				$key = wp_generate_password( 64, false, false );
+				update_option( 'gf_zero_spam_key', $key, FALSE );
 			}
 			return $key;
 		}
 		public function add_key_field( $form ) { // inject the hidden field and key into the form at submission
 			?>
-			<script type="text/javascript">
+			<script type='text/javascript'>
 				jQuery(document).ready(function($){
 					var gforms = '.gform_wrapper form';
-					$( gforms ).submit(function() {
-						$('<input>').attr( "type", "hidden" )
-								.attr( "name", "gf_zero_spam_key" )
-								.attr( "value", "<?php echo $this->get_key(); ?>" )
+					$( document ).on( 'submit', gforms ,function() {
+						$('<input>').attr( 'type', 'hidden' )
+								.attr( 'name', 'gf_zero_spam_key' )
+								.attr( 'value', '<?php echo $this->get_key(); ?>' )
 								.appendTo( gforms );
 						return true;
 					});
