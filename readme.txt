@@ -1,3 +1,5 @@
+This plugin is now managed by GravityKit (https://wordpress.org/plugins/gravity-forms-zero-spam/#developers) so this repo is being archived.
+
 === Gravity Forms Zero Spam ===
 Contributors: karpstrucking, supporthero
 Tags: gravityforms, gravity forms, anti-spam, antispam, spam, spam-blocker, spambot, spammer, addons, add-ons
